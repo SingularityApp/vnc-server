@@ -15,11 +15,3 @@
     group: root
     mode: '0644'
   become: true
-
-- name: enable vncserver@1
-  systemd:
-    enabled: yes
-    state: started
-    daemon_reload: yes
-    name: vncserver@1
-  become: true
