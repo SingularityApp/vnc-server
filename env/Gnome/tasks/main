@@ -1,0 +1,17 @@
+---
+
+- name: /root/.vnc/xstartup
+  copy:
+    src: tigervnc/xstartup
+    dest: /root/.vnc/
+    owner: root
+    group: root
+    mode: '0700'
+
+- name: /home/user/.vnc/xstartup
+  copy:
+    src: tigervnc/xstartup
+    dest: '/home/{{ ansible_user }}/.vnc/'
+    owner: '{{ ansible_user }}'
+    group: '{{ ansible_user }}'
+    mode: '0700'

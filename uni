@@ -1,4 +1,6 @@
 ---
 - hosts: uninet
   roles:
+  - role: this
   - role: tigervnc
+  - role: env/Gnome

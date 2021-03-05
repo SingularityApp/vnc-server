@@ -13,7 +13,10 @@ https://unix.stackexchange.com/questions/398905/vnc-server-only-listening-for-co
 
 `-localhost no`
 
-# Problem: use running Desktop
-
+# Problem: use existing Desktop
 ## Solution
 https://www.reddit.com/r/Ubuntu/comments/jgdpv0/installing_and_settingup_vnc_server_on_2010/
+
+#  Problem: can't start
+## Solution
+https://www.digitalocean.com/community/questions/couldn-t-start-vnc-server
