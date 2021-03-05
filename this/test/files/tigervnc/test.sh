@@ -1,0 +1,3 @@
+netstat -tlnp
+
+vncserver -list
