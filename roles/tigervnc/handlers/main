@@ -1,5 +1,9 @@
 ---
 - name: enable vncserver@
+  debug:
+    msg: this breaks
+
+- name: enable vncserver@ broken
   systemd:
     enabled: yes
     state: started
