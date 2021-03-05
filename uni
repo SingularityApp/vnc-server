@@ -2,5 +2,5 @@
 - hosts: uninet
   roles:
   - role: tigervnc
-  # - role: env/Gnome
-  # - role: env/password
+  - role: env/Gnome
+  - role: env/password
