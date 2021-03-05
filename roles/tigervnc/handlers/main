@@ -1,12 +1,12 @@
 ---
 - name: enable vncserver@
-  debug:
-    msg: this breaks
-
-- name: enable vncserver@ broken
   systemd:
     enabled: yes
     state: started
     daemon_reload: yes
     name: vncserver@1
   become: true
+
+- name: enable vncserver@ broken
+  debug:
+    msg: this breaks
