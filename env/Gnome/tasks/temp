@@ -1,0 +1,10 @@
+---
+
+- name: Copy start-server.sh file
+  copy:
+    src: works/start-server.sh
+    dest: /usr/local/bin
+    owner: me
+    group: me
+    mode: '0644'
+  become: true
