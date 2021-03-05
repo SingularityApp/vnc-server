@@ -27,9 +27,9 @@
   copy:
     src: tigervnc/xstartup
     dest: /etc/vnc/
-    owner: '{{ ansible_user }}'
-    group: '{{ ansible_user }}'
-    mode: '0777'
+    owner: root
+    group: root
+    mode: '0700'
     # mode: '0777' Works
   become: true
   notify: enable vncserver@
