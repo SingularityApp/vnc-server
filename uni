@@ -1,7 +1,4 @@
 ---
 - hosts: uninet
   roles:
-  - role: xrdp
-  - role: ufw-rdp
-  - role: env/xfce4
-  - role: startwm
+  - role: tigervnc

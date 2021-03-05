@@ -1,0 +1,8 @@
+---
+
+- name: Install TigerVNC
+  apt:
+    pkg:
+    - tigervnc-standalone-server
+    - tigervnc-xorg-extension
+  become: true
