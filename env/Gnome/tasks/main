@@ -8,7 +8,7 @@
 
 - name: Create /root/.vnc/xstartup
   copy:
-    src: 'tigervnc/{{ os }}/xstartup/'
+    src: 'tigervnc/{{ os }}/xstartup'
     dest: /root/.vnc/
     owner: root
     group: root
