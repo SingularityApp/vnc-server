@@ -1,11 +1,14 @@
-# Problem: Sudo only
+# Problem: sudo only
+crashes unless started with sudo
+
+## Solution
 https://stackoverflow.com/questions/59709214/tigervncserver-crashes-unless-started-with-sudo
 
-## Solution
-only listening for connections from localhost
 
 # Problem: localhost only
-https://unix.stackexchange.com/questions/398905/vnc-server-only-listening-for-connections-from-localhost
+only listening for connections from localhost
 
 ## Solution
+https://unix.stackexchange.com/questions/398905/vnc-server-only-listening-for-connections-from-localhost
+
 `-localhost no`
