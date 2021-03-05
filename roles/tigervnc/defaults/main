@@ -1,2 +1,4 @@
 ---
 geometry: 1024x768
+
+os: '{{ ansible_distribution }}/{{ ansible_distribution_major_version }}'
