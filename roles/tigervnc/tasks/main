@@ -16,10 +16,25 @@
     mode: '0644'
   become: true
 
-# - name: enable vncserver@1
-#   systemd:
-#     enabled: yes
-#     state: started
-#     daemon_reload: yes
-#     name: vncserver@1
-#   become: true
+- name: enable vncserver@1
+  systemd:
+    enabled: yes
+    state: started
+    daemon_reload: yes
+    name: vncserver@1
+  become: true
+
+- name: Create /etc/vnc directory
+  file:
+    path: /etc/vnc
+    state: directory
+  become: true
+
+- name: Create symbolic link in /etc
+  file:
+    src: /root/.vnc/xstartup
+    dest: /etc/vnc/xstartup
+    owner: root
+    group: root
+    state: link
+  become: true

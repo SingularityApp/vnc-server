@@ -2,6 +2,7 @@
 - name: install ubuntu-gnome-desktop
   apt:
     pkg:
+    - gnome-session
     - ubuntu-gnome-desktop
   become: true
 
