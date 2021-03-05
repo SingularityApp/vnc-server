@@ -6,3 +6,20 @@
     - tigervnc-standalone-server
     - tigervnc-xorg-extension
   become: true
+
+- name: Systemd Unit File
+  template:
+    src: vncserver@.service.j2
+    dest: /etc/systemd/system/vncserver@.service
+    owner: root
+    group: root
+    mode: '0644'
+  become: true
+
+# - name: enable vncserver@1
+#   systemd:
+#     enabled: yes
+#     state: started
+#     daemon_reload: yes
+#     name: vncserver@
+#   become: true

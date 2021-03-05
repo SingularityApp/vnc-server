@@ -12,3 +12,8 @@ only listening for connections from localhost
 https://unix.stackexchange.com/questions/398905/vnc-server-only-listening-for-connections-from-localhost
 
 `-localhost no`
+
+# Problem: use running Desktop
+
+## Solution
+https://www.reddit.com/r/Ubuntu/comments/jgdpv0/installing_and_settingup_vnc_server_on_2010/
