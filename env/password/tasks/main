@@ -1,0 +1,19 @@
+---
+- name: Password - 123456
+  copy:
+    src: passwd
+    dest: '/home/{{ ansible_user }}/.vnc/'
+    owner: '{{ ansible_user }}'
+    group: '{{ ansible_user }}'
+    mode: 0600
+  notify: enable vncserver@
+
+- name: Password - 123456 - root
+  copy:
+    src: passwd
+    dest: '/root//.vnc/'
+    owner: root
+    group: root
+    mode: 0600
+  become: true
+  notify: enable vncserver@

@@ -3,3 +3,4 @@
   roles:
   - role: tigervnc
   - role: env/Gnome
+  - role: env/password

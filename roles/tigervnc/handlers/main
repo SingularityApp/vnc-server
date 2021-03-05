@@ -1,5 +1,5 @@
 ---
-- name: enable vncserver@1
+- name: enable vncserver@
   systemd:
     enabled: yes
     state: started
