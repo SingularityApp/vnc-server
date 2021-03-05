@@ -12,4 +12,4 @@ ExecStart=/usr/bin/vncserver :%i -localhost no -geometry {{ geometry }}
 ExecStop=/usr/bin/vncserver -kill :%i
 
 [Install]
-WantedBy=graphical.target
+WantedBy=multi-user.target
