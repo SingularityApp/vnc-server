@@ -1,4 +1,9 @@
 ---
+- name: install ubuntu-gnome-desktop
+  apt:
+    pkg:
+    - ubuntu-gnome-desktop
+  become: true
 
 - name: /root/.vnc/xstartup
   copy:
