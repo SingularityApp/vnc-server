@@ -8,7 +8,7 @@
 
 - name: Create /root/.vnc/xstartup
   copy:
-    src: tigervnc/xstartup
+    src: 'tigervnc/{{ os }}/xstartup/'
     dest: /root/.vnc/
     owner: root
     group: root
@@ -17,7 +17,7 @@
 
 - name: Create /home/user/.vnc/xstartup
   copy:
-    src: tigervnc/xstartup
+    src: tigervnc/{{ os }}/xstartup
     dest: '/home/{{ ansible_user }}/.vnc/'
     owner: '{{ ansible_user }}'
     group: '{{ ansible_user }}'
@@ -25,7 +25,7 @@
 
 - name: Create /etc/vnc/xstartup
   copy:
-    src: tigervnc/xstartup
+    src: tigervnc/{{ os }}/xstartup
     dest: /etc/vnc/
     owner: root
     group: root
