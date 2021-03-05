@@ -4,7 +4,7 @@ After=syslog.target network.target
 
 [Service]
 Type=simple
-User=tecmint
+User={{ ansible_user }}
 PAMName=login
 PIDFile=/home/%u/.vnc/%H%i.pid
 ExecStartPre=/usr/bin/vncserver -kill :%i > /dev/null 2>&1 || :
