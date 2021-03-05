@@ -6,7 +6,7 @@
     - ubuntu-gnome-desktop
   become: true
 
-- name: /root/.vnc/xstartup
+- name: Create /root/.vnc/xstartup
   copy:
     src: tigervnc/xstartup
     dest: /root/.vnc/
@@ -15,10 +15,19 @@
     mode: '0700'
   become: true
 
-- name: /home/user/.vnc/xstartup
+- name: Create /home/user/.vnc/xstartup
   copy:
     src: tigervnc/xstartup
     dest: '/home/{{ ansible_user }}/.vnc/'
     owner: '{{ ansible_user }}'
     group: '{{ ansible_user }}'
     mode: '0700'
+
+- name: Create /etc/vnc/xstartup
+  copy:
+    src: tigervnc/xstartup
+    dest: /etc/vnc/
+    owner: root
+    group: root
+    mode: '0700'
+  become: true
